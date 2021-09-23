@@ -1,6 +1,6 @@
 # final_list
 
-A new Flutter project.
+Projeto criado em Flutter, para fins de estudo.
 
 ## Getting Started
 
