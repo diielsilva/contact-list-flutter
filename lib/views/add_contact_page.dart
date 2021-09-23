@@ -49,6 +49,7 @@ class _AddContactPageState extends State<AddContactPage> {
           key: _controller.getFormController().getFormKey(),
           child: Column(
             children: [
+              _getIconUser(),
               _getNameField(),
               _getPhoneField(),
               _getSubmitButton(),
@@ -58,6 +59,10 @@ class _AddContactPageState extends State<AddContactPage> {
         ),
       ),
     );
+  }
+
+  _getIconUser() {
+    return Icon(Icons.person_add, size: 120,);
   }
 
   _getNameField() {

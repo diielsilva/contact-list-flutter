@@ -58,8 +58,18 @@ class _HomePageState extends State<HomePage> {
   }
 
   _resultEmptyList() {
-    return Center(
-      child: Text("Nenhum usuário encontrado"),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Container(
+          child: Icon(
+            Icons.not_interested,
+            size: 120,
+          ),
+        ),
+        Text("Nenhum usuário encontrado.", textAlign: TextAlign.center)
+      ],
     );
   }
 
