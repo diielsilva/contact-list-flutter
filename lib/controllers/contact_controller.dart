@@ -74,7 +74,7 @@ class ContactController extends GetxController {
     DatabaseHelper dbHelper = Get.find<DatabaseHelper>();
     Database database = await dbHelper.openConnection();
     List<Map<String, Object?>> resultQuery =
-        await database.rawQuery("SELECT * FROM contacts");
+        await database.rawQuery("SELECT * FROM contacts ORDER BY name");
     for (Map<String, Object?> element in resultQuery) {
       _contactsList!.add(ContactModel.fromMap(element));
     }
